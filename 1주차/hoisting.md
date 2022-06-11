@@ -99,13 +99,13 @@ hoist = 10;
 위와 같은 코드가 소스코드의 평가 단계에 있을 때는 선언문만이 먼저 실행되고 할당문은 실행되지 않았기 때문에 undefined로 Environment Record에 등록되어 값이 저장된다.  
 (var 키워드로 변수를 선언한 경우 선언과 초기화가 동시에 진행된다.)
 
-![ER_undefined](https://github.com/ChangSuLee00/Javascript-study/blob/main/pictures/ER_defined.png?raw=true)
+![ER_undefined](https://github.com/ChangSuLee00/Javascript-study/blob/main/pictures/ER_undefined.png?raw=true)
 
 ### 소스코드의 실행
 
 소스코드의 평가 과정이 끝나면 소스코드의 실행이 시작된다. 이때 var hoist;는 이미 실행되었기 때문에 hoist = 10;이라는 할당문만이 실행되게 된다. 할당하려는 변수가 선언된 변수라면 할당의 결과를 Environment Record에 기록한다.
 
-![ER_defined](https://github.com/ChangSuLee00/Javascript-study/blob/main/pictures/ER_undefined.png?raw=true)
+![ER_defined](https://github.com/ChangSuLee00/Javascript-study/blob/main/pictures/ER_defined.png?raw=true)
 
 ### 호이스팅의 이유
 
